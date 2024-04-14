@@ -22,6 +22,7 @@ import {
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import ToppingList from "./topping-list";
+import { ShoppingCart } from "lucide-react";
 
 export type Product = {
   id: string;
@@ -157,7 +158,14 @@ export default function ProductCard({ product }: PropTypes) {
                     </div>
                   </RadioGroup>
                 </div>
-                <ToppingList/>
+                <ToppingList />
+                <div className="flex items-center justify-between mt-12">
+                  <span className="font-bold">₹400</span>
+                  <Button>
+                    <ShoppingCart size={20} />
+                    <span className="ml-2">Add to cart</span>
+                  </Button>
+                </div>
               </div>
             </div>
           </DialogContent>
