@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import ToppingList from "./topping-list";
 
 export type Product = {
   id: string;
@@ -156,6 +157,7 @@ export default function ProductCard({ product }: PropTypes) {
                     </div>
                   </RadioGroup>
                 </div>
+                <ToppingList/>
               </div>
             </div>
           </DialogContent>
